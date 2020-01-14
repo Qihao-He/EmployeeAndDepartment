@@ -47,11 +47,10 @@
 		<c:out value="Dept Name: ${department.name} ,"/>
 		<c:out value="Email: ${department.email} ,"/>
 		<c:out value="Employee: "/>
-			<c:forEach var="employee" items="${employeeList}">
-				<c:out value="${employee.firstName} ${employee.lastName} ${employee.age} ,"/>
-			</c:forEach>
-		<c:out value="Employee: ${employee.age}."/><br>
-	</c:forEach>
+		<c:forEach var="employee" items="${department.employeeList}">
+			<c:out value="${employee} ,"/>
+		</c:forEach><br>
+	</c:forEach><br>
 	
 </body>
 </html>
