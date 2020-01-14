@@ -40,11 +40,18 @@
  	<%
 		if(session.getAttribute("departmentList") != null) {
 			out.println("Existing Department");
-/* 			for (Department d : departmentList) {
-				
-			} */
 		}
 	%>
+	<br>
+	<c:forEach var="department" items="${departmentList}">
+		<c:out value="Dept Name: ${department.name} ,"/>
+		<c:out value="Email: ${department.email} ,"/>
+		<c:out value="Employee: "/>
+			<c:forEach var="employee" items="${employeeList}">
+				<c:out value="${employee.firstName} ${employee.lastName} ${employee.age} ,"/>
+			</c:forEach>
+		<c:out value="Employee: ${employee.age}."/><br>
+	</c:forEach>
 	
 </body>
 </html>

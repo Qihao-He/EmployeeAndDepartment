@@ -42,13 +42,14 @@ public class AddDepartment extends HttpServlet {
 			for (String e : selectedEmployees) {
 				employeeList.add(e);
 			}
-			request.setAttribute("hasDepartments", true);		
-			request.getRequestDispatcher("addDepartment.jsp").forward(request, response);
+//			request.setAttribute("hasDepartments", true);		
+//			request.getRequestDispatcher("addDepartment.jsp").forward(request, response);
 		}
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("departmentList", departmentList);
 		printInConsole(session);
+		response.sendRedirect("addDepartment.jsp");
 	}
 
 	private void printInConsole(HttpSession session) {
