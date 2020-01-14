@@ -40,7 +40,6 @@ public class AddDepartment extends HttpServlet {
 		} else { 
 			List<String> employeeList = department.getEmployeeList();
 			for (String e : selectedEmployees) {
-//				System.out.println(e);
 				employeeList.add(e);
 			}
 			request.setAttribute("hasDepartments", true);		
@@ -50,8 +49,6 @@ public class AddDepartment extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("departmentList", departmentList);
 		printInConsole(session);
-		
-		response.sendRedirect("welcome.jsp");
 	}
 
 	private void printInConsole(HttpSession session) {

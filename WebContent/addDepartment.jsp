@@ -40,7 +40,9 @@
  	<%
 		if(session.getAttribute("departmentList") != null) {
 			out.println("Existing Department");
-			
+/* 			for (Department d : departmentList) {
+				
+			} */
 		}
 	%>
 	
