@@ -7,7 +7,7 @@
 <title>Videos page</title>
 </head>
 <body>
-	<h2>Videos page</h2><br>
+
 	<%
 		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); //HTTP 1.1
 		response.setHeader("Pragma", "no-cache"); //HTTP 1.0
@@ -16,6 +16,7 @@
 			response.sendRedirect("login.jsp");
 		}
 	%>
+	<h2>Videos page</h2>
 	<form action="logout"><input type="submit" value="Logout"></form>
 	<a href="https://www.youtube.com/watch?v=7TOmdDJc14s&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46">Servlet login tutorials</a><br>
 	<a href="welcome.jsp">Welcome page</a><br>

@@ -7,14 +7,12 @@
 <title>Login page</title>
 </head>
 <body>
- 	<h2>Login page</h2><br>
- 	
  	<%
 		if(request.getAttribute("invalid") != null) {
 			out.println("invalid username or password");
 		}
 	%>
-	
+	<h2>Login page</h2>
  	<form action="login" method="post">
  		Enter username: <input type="text" name="username"><br>
  		Enter password: <input type="password" name="password"><br>

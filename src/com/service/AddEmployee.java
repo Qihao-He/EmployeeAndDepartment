@@ -1,4 +1,4 @@
-package com.login;
+package com.service;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 import com.dao.DepartmentDao;
 import com.dao.LoginDao;
-import com.elements.Employee;
+import com.model.Employee;
 
 @WebServlet("/addEmployee")
 public class AddEmployee extends HttpServlet {

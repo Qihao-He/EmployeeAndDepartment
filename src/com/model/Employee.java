@@ -1,12 +1,12 @@
-package com.elements;
+package com.model;
 
 public class Employee {
 	private String firstName;
 	private String lastName;
 	private int age;
 
-	public Employee(String firstname, String lastName) {
-		this.firstName = firstname;
+	public Employee(String firstName, String lastName) {
+		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 	

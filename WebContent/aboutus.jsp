@@ -7,10 +7,9 @@
 <title>About us page</title>
 </head>
 <body>
-	<h2>About us page</h2><br>
+	<h2>About us page</h2>
 	This is Qihao He.<br>
 	From Servlet Learnings...<br>
-	<form action="logout"><input type="submit" value="Logout"></form>
 	<a href="welcome.jsp">Welcome page</a>
 </body>
 </html>

@@ -7,7 +7,6 @@
 <title>Welcome page</title>
 </head>
 <body>
-	<h2>Welcome user: ${username}</h2><br>
 	<%
 		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); //HTTP 1.1
 		response.setHeader("Pragma", "no-cache"); //HTTP 1.0
@@ -17,7 +16,7 @@
 		}
 	%>
 	
-
+	<h2>Welcome ${username}</h2>
  	<a href="addEmployee.jsp">Add Employee</a><br>
  	<a href="addDepartment.jsp">Add Department</a><br>
  	<a href="videos.jsp">Tutorial Videos</a><br>
